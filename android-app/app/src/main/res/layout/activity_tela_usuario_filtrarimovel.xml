@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp"
+    tools:context="com.geekdev.primoveisbeta.tela_usuario_filtrarimovel">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Tipo (Residencial ou etc)..."
+        android:id="@+id/tipoimovel"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Negociação (venda ou etc)..."
+        android:id="@+id/tiponego"
+        android:layout_below="@+id/tipoimovel"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Cidade... "
+        android:id="@+id/cidade"
+        android:layout_below="@+id/tiponego"/>
+
+    <Button
+        android:layout_width="190dp"
+        android:layout_height="wrap_content"
+        android:background="#1A5E86"
+        android:layout_centerHorizontal="true"
+        android:hint="Buscar"
+        android:onClick="buscar"
+        android:textColorHint="#fff"
+        android:layout_marginTop="14dp"
+        android:layout_below="@+id/cidade"/>
+
+</RelativeLayout>

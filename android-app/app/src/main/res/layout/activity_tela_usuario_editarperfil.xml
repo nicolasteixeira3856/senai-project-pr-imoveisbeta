@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp"
+    tools:context="com.geekdev.primoveisbeta.tela_usuario_editarperfil">
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:id="@+id/espaco_tela_editarperfiluser"/>
+
+    <TextView
+        android:layout_below="@+id/espaco_tela_editarperfiluser"
+        android:text="*Nome completo"
+        android:textSize="20sp"
+        android:id="@+id/nomeusereditar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:id="@+id/txt_nome_editaruser"
+        android:hint=""
+        android:layout_below="@+id/nomeusereditar"/>
+
+    <TextView
+        android:layout_below="@+id/txt_nome_editaruser"
+        android:text="*Email..."
+        android:textSize="20sp"
+        android:id="@+id/emailusereditar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:id="@+id/txt_email_editaruser"
+        android:hint=""
+        android:layout_below="@+id/emailusereditar"/>
+
+    <TextView
+        android:layout_below="@+id/txt_email_editaruser"
+        android:text="*CPF..."
+        android:textSize="20sp"
+        android:id="@+id/cpfusereditar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt_cpf_editaruser"
+        android:hint=""
+        android:editable="false"
+        android:layout_below="@+id/cpfusereditar"/>
+
+    <TextView
+        android:layout_below="@+id/txt_cpf_editaruser"
+        android:text="*Telefone..."
+        android:textSize="20sp"
+        android:id="@+id/telefoneusereditar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:id="@+id/txt_telefone_editarperfil"
+        android:hint=""
+        android:layout_below="@+id/telefoneusereditar"/>
+
+    <TextView
+        android:layout_below="@+id/txt_telefone_editarperfil"
+        android:text="*Celular..."
+        android:textSize="20sp"
+        android:id="@+id/celularusereditar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:id="@+id/txt_celular_editarperfil"
+        android:hint=""
+        android:layout_below="@+id/celularusereditar"/>
+
+    <Button
+        android:background="#1A5E86"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:hint="Editar informações"
+        android:textColorHint="#FFF"
+        android:id="@+id/btn_editarperfil"
+        android:onClick="ClicarEditarPerfilUser"
+        android:layout_below="@+id/txt_celular_editarperfil"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="14dp" />
+
+    <TextView
+        android:layout_marginTop="25dp"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="Altere a sua senha:"
+        android:layout_below="@+id/btn_editarperfil"/>
+
+    <Button
+        android:layout_marginTop="10dp"
+        android:background="#1A5E86"
+        android:hint="Alterar senha"
+        android:layout_marginLeft="155dp"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:textColorHint="#FFF"
+        android:onClick="abrirurl"
+        android:layout_below="@+id/btn_editarperfil"/>
+
+</RelativeLayout>

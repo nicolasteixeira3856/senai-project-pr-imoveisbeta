@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:padding="5dp"
+    android:layout_height="match_parent"
+    tools:context="com.geekdev.primoveisbeta.activity_tela_corretor_editarperfil">
+
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:id="@+id/espaco_tela_editarperfilcorretor"/>
+
+    <TextView
+        android:layout_below="@+id/espaco_tela_editarperfilcorretor"
+        android:text="*Nome completo..."
+        android:textSize="20sp"
+        android:id="@+id/nomecorretoreditar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:id="@+id/txt_nome_editarusercorretor"
+        android:hint=""
+        android:layout_below="@+id/nomecorretoreditar"/>
+
+    <TextView
+        android:layout_below="@+id/txt_nome_editarusercorretor"
+        android:text="*Email..."
+        android:textSize="20sp"
+        android:id="@+id/emailcorretoreditar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:id="@+id/txt_email_editarusercorretor"
+        android:hint=""
+        android:layout_below="@+id/emailcorretoreditar"/>
+
+    <TextView
+        android:layout_below="@+id/txt_email_editarusercorretor"
+        android:text="*CPF..."
+        android:textSize="20sp"
+        android:id="@+id/cpfcorretoreditar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt_cpf_editarusercorretor"
+        android:hint=""
+        android:editable="false"
+        android:layout_below="@+id/cpfcorretoreditar"/>
+
+    <TextView
+        android:layout_below="@+id/txt_cpf_editarusercorretor"
+        android:text="*Telefone..."
+        android:textSize="20sp"
+        android:id="@+id/telefonecorretoreditar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:id="@+id/txt_telefone_editarperfilcorretor"
+        android:hint=""
+        android:layout_below="@+id/telefonecorretoreditar"/>
+
+    <TextView
+        android:layout_below="@+id/txt_telefone_editarperfilcorretor"
+        android:text="*Celular..."
+        android:textSize="20sp"
+        android:id="@+id/celularcorretoreditar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:id="@+id/txt_celular_editarperfilcorretor"
+        android:hint=""
+        android:layout_below="@+id/celularcorretoreditar"/>
+
+    <Button
+        android:background="#1A5E86"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:hint="Editar informações"
+        android:textColorHint="#FFF"
+        android:id="@+id/btn_editarperfilcorretor"
+        android:onClick="ClicarEditarPerfilcorretor"
+        android:layout_below="@+id/txt_celular_editarperfilcorretor"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="14dp" />
+
+</RelativeLayout>

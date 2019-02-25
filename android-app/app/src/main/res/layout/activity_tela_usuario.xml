@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp"
+    tools:context="com.geekdev.primoveisbeta.Tela_usuario">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/bemvindouser"
+        android:text="Bem-vindo"
+        android:textAlignment="center"
+        android:textSize="26sp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/nomeuser"
+        android:text="[Nome do usuario]"
+        android:textAlignment="center"
+        android:textSize="26sp"
+        android:layout_below="@+id/bemvindouser"/>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/espaco_tela_user"
+        android:layout_marginTop="75dp"
+        android:layout_below="@+id/nomeuser"/>
+
+
+    <Button
+        android:textColor="#fff"
+        android:background="#1A5E86"
+        android:onClick="filtrarimovel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/filtrarimoveis"
+        android:text="Filtrar imóveis"
+        android:layout_below="@+id/espaco_tela_user"/>
+
+    <Button
+        android:layout_marginTop="5dp"
+        android:textColor="#fff"
+        android:background="#1A5E86"
+        android:onClick="listaimoveis"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/listarimovel"
+        android:text="Imóveis"
+        android:layout_below="@+id/filtrarimoveis"/>
+
+    <Button
+        android:layout_marginTop="5dp"
+        android:textColor="#fff"
+        android:background="#1A5E86"
+        android:onClick="imoveisfavoritos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/favoritos"
+        android:text="Favoritos"
+        android:layout_below="@+id/listarimovel"/>
+
+    <Button
+        android:layout_marginTop="5dp"
+        android:textColor="#fff"
+        android:background="#1A5E86"
+        android:onClick="imoveisreservados"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/reservados"
+        android:text="Imóveis reservados"
+        android:layout_below="@+id/favoritos"/>
+
+    <Button
+        android:layout_marginTop="5dp"
+        android:textColor="#fff"
+        android:background="#1A5E86"
+        android:onClick="editarperfil"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editarperfiluser"
+        android:text="Editar perfil"
+        android:layout_below="@+id/reservados"/>
+
+    <Button
+        android:layout_marginTop="5dp"
+        android:textColor="#fff"
+        android:background="#1A5E86"
+        android:onClick="deslogar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/sair_user"
+        android:text="Desconectar"
+        android:layout_below="@+id/editarperfiluser"/>
+</RelativeLayout>

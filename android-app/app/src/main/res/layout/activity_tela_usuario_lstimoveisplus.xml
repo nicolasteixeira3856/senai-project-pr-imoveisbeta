@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+    android:padding="5dp"
+tools:context="com.geekdev.primoveisbeta.tela_usuario_lstimoveisplus">
+
+<ScrollView
+    android:layout_width="372dp"
+    android:layout_height="540dp"
+    tools:layout_editor_absoluteY="8dp"
+    tools:layout_editor_absoluteX="8dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:id="@+id/nomeimgg"
+                android:src="@mipmap/ic_launcher"/>
+
+        </android.support.v7.widget.CardView>
+
+
+            <!-- <TextView
+                android:text="ID"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txt_id_plus"
+                android:padding="5dp"
+                android:textSize="20sp" /> -->
+
+
+            <TextView
+                android:text="Titulo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txt_titulo_plus"
+                android:padding="5dp"
+                android:textSize="20sp" />
+
+
+            <TextView
+                android:padding="5dp"
+                android:text="Valor (R$): "
+                android:textSize="20sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:text="Valor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txt_valor_plus"
+                android:padding="5dp"
+                android:textSize="20sp" />
+
+            <TextView
+                android:text="Cidade"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txt_cidadeplus"
+                android:padding="5dp"
+                android:textSize="20sp" />
+
+            <TextView
+                android:text="Bairro"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txt_bairroplus"
+                android:padding="5dp"
+                android:textSize="20sp" />
+
+
+            <TextView
+                android:padding="5dp"
+                android:text="Descriçao: "
+                android:textSize="20sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:text="Descrição"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txt_descricao_plus"
+                android:padding="5dp"
+                android:textSize="20sp" />
+
+
+            <TextView
+                android:padding="5dp"
+                android:text="Rua: "
+                android:textSize="20sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:text="Rua"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txt_rua_plus"
+                android:padding="5dp"
+                android:textSize="20sp" />
+
+            <TextView
+                android:padding="5dp"
+                android:text="Número: "
+                android:textSize="20sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:text="NRua"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txt_nrua_plus"
+                android:padding="5dp"
+                android:textSize="20sp" />
+
+            <Button
+                android:layout_marginTop="15dp"
+                android:background="#1A5E86"
+                android:textColorHint="#FFF"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:hint="Adicionar aos favoritos"
+                android:onClick="favoritarImovel"
+                android:layout_marginLeft="62dp"
+                android:id="@+id/btn_favoritarimovellstplus"/>
+
+            <Button
+                android:padding="2dp"
+                android:onClick="reservarImovel"
+                android:layout_marginTop="10dp"
+                android:background="#1A5E86"
+                android:textColorHint="#FFF"
+                android:layout_width="250dp"
+                android:layout_marginLeft="62dp"
+                android:layout_height="wrap_content"
+                android:hint="Reservar imóvel"
+                android:id="@+id/btn_reservarimovellstplus"/>
+
+    </LinearLayout>
+</ScrollView>
+
+</android.support.constraint.ConstraintLayout>

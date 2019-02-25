@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp"
+    tools:context="com.geekdev.primoveisbeta.Tela_corretor">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/bemvindocorretor"
+        android:text="Bem-vindo"
+        android:textAlignment="center"
+        android:textSize="26sp"/>
+
+    <TextView
+        android:layout_below="@+id/bemvindocorretor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/nomecorretor"
+        android:text="[Nome do corretor]"
+        android:textAlignment="center"
+        android:textSize="26sp"/>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/espaco_tela_corretor"
+        android:layout_marginTop="100dp"
+        android:layout_below="@+id/bemvindocorretor"/>
+
+    <Button
+        android:textColor="#fff"
+        android:background="#1A5E86"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/alterarestagio"
+        android:text="Alterar estágio da obra"
+        android:layout_below="@+id/espaco_tela_corretor"/>
+
+    <Button
+        android:layout_marginTop="5dp"
+        android:textColor="#fff"
+        android:background="#1A5E86"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editarperfilcorretor"
+        android:text="Editar perfil"
+        android:onClick="editarperfilcorretor"
+        android:layout_below="@+id/alterarestagio"/>
+
+    <Button
+        android:layout_marginTop="5dp"
+        android:textColor="#fff"
+        android:background="#1A5E86"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/reserimovelcliente"
+        android:onClick="ReservarImovelCliente"
+        android:text="Reservar imóvel para cliente"
+        android:layout_below="@+id/editarperfilcorretor"/>
+
+    <Button
+        android:layout_marginTop="5dp"
+        android:textColor="#fff"
+        android:background="#1A5E86"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/atendercliente"
+        android:text="Atender cliente"
+        android:layout_below="@+id/reserimovelcliente"/>
+
+    <Button
+        android:layout_marginTop="5dp"
+        android:textColor="#fff"
+        android:background="#1A5E86"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/sair_corretor"
+        android:text="Sair"
+        android:onClick="deslogar_corretor"
+        android:layout_below="@+id/atendercliente"/>
+
+</RelativeLayout>

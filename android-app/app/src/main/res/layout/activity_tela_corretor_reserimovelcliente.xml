@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp"
+    tools:context="com.geekdev.primoveisbeta.tela_corretor_reserimovelcliente">
+
+    <Space
+        android:layout_marginTop="120dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/espaco_reservarimovelcliente"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt_email_cliente"
+        android:hint="*Digite o email do cliente..."
+        android:inputType="textEmailAddress"
+        android:layout_below="@+id/espaco_reservarimovelcliente"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt_id_imovelcliente"
+        android:hint="*Digite o ID do imóvel a ser reservado..."
+        android:inputType="number"
+        android:layout_below="@+id/txt_email_cliente"/>
+
+    <Button
+        android:background="#1A5E86"
+        android:textColorHint="#FFF"
+        android:layout_width="200dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="14dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_reservarimovelcliente"
+        android:hint="Reservar imóvel para o cliente"
+        android:onClick="ClicarReservarImovelCliente"
+        android:layout_below="@+id/txt_id_imovelcliente"/>
+
+</RelativeLayout>

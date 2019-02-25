@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F6F6F6"
+    tools:context="com.geekdev.primoveisbeta.MainActivity">
+
+    <ImageView
+        android:src="@mipmap/logo"
+        android:background="#1A5E86"
+        android:layout_width="match_parent"
+        android:layout_height="105dp"
+        android:id="@+id/img_logo_login"/>
+
+    <TextView
+        android:textSize="18sp"
+        android:background="#1A5E86"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="PR-ImóveisBeta"
+        android:textColor="#fff"
+        android:gravity="center"
+        android:id="@+id/txt_logo_login"
+        android:layout_below="@+id/img_logo_login"/>
+
+    <EditText
+        android:layout_below="@+id/txt_logo_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt_email_login"
+        android:inputType="textEmailAddress"
+        android:gravity="center"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:hint="*Email..."/>
+
+    <EditText
+        android:layout_below="@id/txt_email_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt_senha_login"
+        android:inputType="textPassword"
+        android:gravity="center"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:hint="*Senha..."/>
+
+    <Button
+        android:layout_marginTop="15dp"
+        android:background="#1A5E86"
+        android:layout_below="@id/txt_senha_login"
+        android:layout_centerHorizontal="true"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:textColorHint="#FFF"
+        android:id="@+id/btn_login"
+        android:onClick="ClicarLogin"
+        android:hint="Efetuar login"/>
+
+    <TextView
+        android:layout_marginLeft="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ainda não possui uma conta?"
+        android:id="@+id/textview_cadastro"
+        android:layout_alignBaseline="@+id/btn_cadastro"
+        android:layout_alignBottom="@+id/btn_cadastro"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_marginTop="182dp"
+        android:layout_below="@id/btn_login"
+        android:background="#1A5E86"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/textview_cadastro"
+        android:hint="Cadastrar-se"
+        android:textColorHint="#FFF"
+        android:onClick="ClicarECadastro"
+        android:id="@+id/btn_cadastro" />
+
+</RelativeLayout>

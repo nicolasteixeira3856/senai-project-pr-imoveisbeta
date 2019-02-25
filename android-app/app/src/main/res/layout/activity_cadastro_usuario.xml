@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp"
+    tools:context="com.geekdev.primoveisbeta.Cadastro_usuario">
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:id="@+id/espaco_tela_cadastro"/>
+
+    <EditText
+        android:layout_below="@+id/espaco_tela_cadastro"
+        android:layout_marginTop="25dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:id="@+id/txt_nome_cadastro"
+        android:hint="*Nome completo..."/>
+
+    <EditText
+        android:layout_below="@+id/txt_nome_cadastro"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:id="@+id/txt_email_cadastro"
+        android:hint="*Email..."/>
+
+    <EditText
+        android:layout_below="@+id/txt_email_cadastro"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="phone"
+        android:id="@+id/txt_telefone_cadastro"
+        android:hint="*Telefone..."/>
+
+    <EditText
+        android:layout_below="@+id/txt_telefone_cadastro"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:id="@+id/txt_senha_cadastro"
+        android:hint="*Senha..."/>
+
+    <EditText
+        android:layout_below="@+id/txt_senha_cadastro"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:id="@+id/txt_senhac_cadastro"
+        android:hint="*Confirmar senha..."/>
+
+    <EditText
+        android:layout_below="@+id/txt_senhac_cadastro"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt_cpf_cadastro"
+        android:hint="*CPF..."/>
+
+    <Button
+        android:layout_marginTop="15dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/txt_cpf_cadastro"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:background="#1A5E86"
+        android:hint="Cadastrar-se"
+        android:onClick="ClicarCadastro"
+        android:id="@+id/btn_cadastro"
+        android:textColorHint="#FFF" />
+
+</RelativeLayout>

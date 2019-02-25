@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.geekdev.primoveisbeta">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name=".com.example.claudior.imobiliariacwb.permission.MAPS_RECEIVE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/logo"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Cadastro_usuario"
+            android:label="PR-Imoveisbeta - Cadastro" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="" />
+
+        <activity android:name=".Tela_corretor" />
+        <activity android:name=".Tela_usuario" />
+        <activity android:name=".tela_usuario_editarperfil" />
+        <activity android:name=".tela_usuario_lstimoveis" />
+        <activity android:name=".tela_usuario_lstimoveisplus" />
+        <activity android:name=".tela_corretor_reserimovelcliente" />
+        <activity android:name=".activity_tela_corretor_editarperfil" />
+        <activity android:name=".tela_usuario_filtrarimovel"></activity>
+    </application>
+
+</manifest>
